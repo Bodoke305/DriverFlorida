@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Best Driver Florida | Luxury Private Chauffeur Service</title>
+
+  <meta name="description" content="Luxury private chauffeur service in Florida. Airport transfers, business rides, events and private SUV transportation. Hablamos español." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .hero {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d4af37;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 30px;
+      color: #e6e6e6;
+    }
+
+    .highlight {
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn-gold {
+      background: #d4af37;
+      color: #000;
+    }
+
+    .btn-gold:hover {
+      background: #f2d36b;
+    }
+
+    .btn-outline {
+      border: 2px solid #d4af37;
+      color: #d4af37;
+    }
+
+    .btn-outline:hover {
+      background: #d4af37;
+      color: #000;
+    }
+
+    section {
+      padding: 70px 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #cccccc;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #141b24;
+      padding: 30px;
+      border-radius: 14px;
+      border: 1px solid #263241;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 12px;
+      font-size: 23px;
+    }
+
+    .card p {
+      color: #dddddd;
+    }
+
+    .about {
+      background: #101720;
+      border-radius: 18px;
+      padding: 45px;
+      border: 1px solid #263241;
+    }
+
+    .about h2 {
+      color: #d4af37;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      margin-bottom: 18px;
+      color: #dddddd;
+      font-size: 18px;
+    }
+
+    .features {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .feature {
+      background: #0b0f14;
+      padding: 18px;
+      border-radius: 10px;
+      color: #ffffff;
+      border: 1px solid #263241;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, #141b24, #0b0f14);
+      padding: 45px;
+      border-radius: 18px;
+      text-align: center;
+      border: 1px solid #263241;
+    }
+
+    .contact-box h2 {
+      color: #d4af37;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      font-size: 18px;
+      color: #dddddd;
+      margin-bottom: 25px;
+    }
+
+    form {
+      margin-top: 30px;
+      display: grid;
+      gap: 15px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #d4af37;
+      color: #000;
+      font-weight: bold;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #f2d36b;
+    }
+
+    footer {
+      background: #05070a;
+      text-align: center;
+      padding: 30px 20px;
+      color: #aaaaaa;
+      font-size: 14px;
+    }
+
+    .language-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: rgba(212, 175, 55, 0.12);
+      color: #d4af37;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      header {
+        padding: 20px;
+      }
+
+      .about {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <div class="logo">Best Driver Florida</div>
+
+      <h1>Luxury Private Chauffeur Service in Florida</h1>
+
+      <p>
+        Travel with <span class="highlight">Safety, Comfort & Confidence</span>.
+        Professional private driver service for airport transfers, business trips,
+        events and private rides.
+      </p>
+
+      <p>
+        Servicio privado de chofer de lujo en Florida. Viajes seguros, cómodos y puntuales.
+        <span class="highlight">Hablamos español.</span>
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-gold" href="tel:+13050000000">Call Now</a>
+        <a class="btn btn-outline" href="sms:+13050000000">Send Text</a>
+        <a class="btn btn-outline" href="https://wa.me/13050000000" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-title">
+      <span class="language-label">English</span>
+      <h2>Our Services</h2>
+      <p>Professional luxury transportation for every occasion.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Airport Transfers</h3>
+        <p>Private rides to and from Miami, Fort Lauderdale, Palm Beach, Orlando and other Florida airports.</p>
+      </div>
+
+      <div class="card">
+        <h3>Business & Executive Rides</h3>
+        <p>Reliable transportation for meetings, hotels, conferences and corporate events.</p>
+      </div>
+
+      <div class="card">
+        <h3>Private Events</h3>
+        <p>Luxury rides for weddings, dinners, birthdays, concerts and special occasions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Hourly Chauffeur Service</h3>
+        <p>Book a professional private driver by the hour for multiple stops or full-day service.</p>
+      </div>
+
+      <div class="card">
+        <h3>Luxury SUV Service</h3>
+        <p>Comfortable SUV transportation for families, VIP clients, luggage and private groups.</p>
+      </div>
+
+      <div class="card">
+        <h3>Long Distance Trips</h3>
+        <p>Private transportation between Florida cities with comfort, privacy and professional service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <span class="language-label">Español</span>
+      <h2>Servicios</h2>
+      <p>Transporte privado de lujo para diferentes ocasiones.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Traslados al Aeropuerto</h3>
+        <p>Servicio privado desde y hacia aeropuertos como Miami, Fort Lauderdale, Palm Beach, Orlando y otras ciudades de Florida.</p>
+      </div>
+
+      <div class="card">
+        <h3>Viajes Ejecutivos</h3>
+        <p>Transporte profesional para reuniones, hoteles, conferencias y eventos de negocios.</p>
+      </div>
+
+      <div class="card">
+        <h3>Eventos Privados</h3>
+        <p>Servicio elegante para bodas, cenas, cumpleaños, conciertos y ocasiones especiales.</p>
+      </div>
+
+      <div class="card">
+        <h3>Chofer por Hora</h3>
+        <p>Contrata un chofer privado por varias horas para diferentes paradas o servicio durante el día.</p>
+      </div>
+
+      <div class="card">
+        <h3>Servicio en SUV de Lujo</h3>
+        <p>Transporte cómodo para familias, clientes VIP, equipaje y grupos privados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Viajes de Larga Distancia</h3>
+        <p>Viajes privados entre ciudades de Florida con comodidad, privacidad y puntualidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="about">
+      <h2>Why Choose Best Driver Florida?</h2>
+
+      <p>
+        We provide a professional private chauffeur experience focused on safety,
+        comfort, punctuality and excellent customer service.
+      </p>
+
+      <p>
+        Ofrecemos una experiencia de transporte privado enfocada en seguridad,
+        comodidad, puntualidad y atención profesional.
+      </p>
+
+      <div class="features">
+        <div class="feature">✓ Professional Driver</div>
+        <div class="feature">✓ Clean Luxury SUV</div>
+        <div class="feature">✓ On-Time Pickup</div>
+        <div class="feature">✓ Airport Service</div>
+        <div class="feature">✓ Private & Discreet</div>
+        <div class="feature">✓ English & Spanish</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="contact-box">
+      <h2>Request a Ride / Solicita tu Viaje</h2>
+
+      <p>
+        Fill out the form below or contact us directly by phone, text message or WhatsApp.
+      </p>
+
+      <p>
+        Llena el formulario o contáctanos directamente por llamada, mensaje de texto o WhatsApp.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-gold" href="tel:+13050000000">Call Now</a>
+        <a class="btn btn-outline" href="sms:+13050000000">Text Message</a>
+        <a class="btn btn-outline" href="https://wa.me/13050000000" target="_blank">WhatsApp</a>
+      </div>
+
+      <form action="mailto:your@email.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Full Name / Nombre completo" required />
+
+        <input type="tel" name="Phone" placeholder="Phone Number / Teléfono" required />
+
+        <input type="email" name="Email" placeholder="Email / Correo electrónico" />
+
+        <input type="text" name="Pickup Location" placeholder="Pickup Location / Lugar de recogida" required />
+
+        <input type="text" name="Destination" placeholder="Destination / Destino" required />
+
+        <input type="date" name="Date" required />
+
+        <input type="time" name="Time" required />
+
+        <select name="Service Type" required>
+          <option value="">Select Service / Selecciona el servicio</option>
+          <option value="Airport Transfer">Airport Transfer / Traslado al aeropuerto</option>
+          <option value="Business Ride">Business Ride / Viaje ejecutivo</option>
+          <option value="Private Event">Private Event / Evento privado</option>
+          <option value="Hourly Service">Hourly Service / Servicio por hora</option>
+          <option value="Long Distance Trip">Long Distance Trip / Viaje de larga distancia</option>
+        </select>
+
+        <textarea name="Message" placeholder="Special request, flight number or details / Solicitud especial, número de vuelo o detalles"></textarea>
+
+        <button type="submit">Send Request / Enviar Solicitud</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Best Driver Florida. All rights reserved.</p>
+    <p>Luxury Private Chauffeur Service | Hablamos Español</p>
+  </footer>
+
+</body>
+</html>
