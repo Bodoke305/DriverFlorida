@@ -858,34 +858,34 @@
           <div><strong>Languages:</strong> English & Spanish</div>
         </div>
       </div>
-       <form action="uyezlux@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="Name" placeholder="Full Name / Nombre completo" required>
+       <form id="bookingForm">
+  <input type="text" id="name" placeholder="Full Name / Nombre completo" required>
 
-        <input type="tel" name="Phone" placeholder="Phone Number / Teléfono" required>
+  <input type="tel" id="phone" placeholder="Phone Number / Teléfono" required>
 
-        <input type="email" name="Email" placeholder="Email / Correo electrónico">
+  <input type="email" id="email" placeholder="Email / Correo electrónico">
 
-        <input type="text" name="Pickup Location" placeholder="Pickup Location / Lugar de recogida" required>
+  <input type="text" id="pickup" placeholder="Pickup Location / Lugar de recogida" required>
 
-        <input type="text" name="Destination" placeholder="Destination / Destino" required>
+  <input type="text" id="destination" placeholder="Destination / Destino" required>
 
-        <input type="date" name="Date" required>
+  <input type="date" id="date" required>
 
-        <input type="time" name="Time" required>
+  <input type="time" id="time" required>
 
-        <select name="Service Type" required>
-          <option value="">Select Service / Selecciona el servicio</option>
-          <option value="Airport Transfer">Airport Transfer / Traslado al aeropuerto</option>
-          <option value="Executive Ride">Executive Ride / Viaje ejecutivo</option>
-          <option value="Private Event">Private Event / Evento privado</option>
-          <option value="Hourly Chauffeur">Hourly Chauffeur / Chofer por hora</option>
-          <option value="Long Distance Trip">Long Distance Trip / Viaje de larga distancia</option>
-        </select>
+  <select id="service" required>
+    <option value="">Select Service / Selecciona el servicio</option>
+    <option value="Airport Transfer">Airport Transfer / Traslado al aeropuerto</option>
+    <option value="Executive Ride">Executive Ride / Viaje ejecutivo</option>
+    <option value="Private Event">Private Event / Evento privado</option>
+    <option value="Hourly Chauffeur">Hourly Chauffeur / Chofer por hora</option>
+    <option value="Long Distance Trip">Long Distance Trip / Viaje de larga distancia</option>
+  </select>
 
-        <textarea name="Message" placeholder="Flight number, special request or trip details / Número de vuelo, solicitud especial o detalles del viaje"></textarea>
+  <textarea id="message" placeholder="Flight number, special request or trip details / Número de vuelo, solicitud especial o detalles del viaje"></textarea>
 
-        <button type="submit">Send Request / Enviar Solicitud</button>
-      </form>
+  <button type="submit">Send Request / Enviar Solicitud</button>
+</form>
     </div>
   </section>
 
@@ -893,6 +893,40 @@
     <p>© 2026 <span>Best Driver Florida</span>. All rights reserved.</p>
     <p>Luxury Private Chauffeur Service | Hablamos Español</p>
   </footer>
+<script>
+  document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const pickup = document.getElementById("pickup").value;
+    const destination = document.getElementById("destination").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappNumber = "13054235119";
+
+    const text = `
+Hello, I would like to request a ride.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Pickup Location: ${pickup}
+Destination: ${destination}
+Date: ${date}
+Time: ${time}
+Service Type: ${service}
+Message: ${message}
+    `;
+
+    const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+  });
+</script>
 </body>
 </html>
